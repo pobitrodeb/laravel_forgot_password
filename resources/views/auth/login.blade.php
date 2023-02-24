@@ -6,7 +6,7 @@
       <div class="row justify-content-center">
           <div class="col-md-8">
               <div class="card">
-                  <div class="card-header bg-primary text-white">Custom Login and Register With Password Reset </div>
+                  <div class="card-header">Login</div>
                   <div class="card-body">
 
                       <form action="{{ route('login.post') }}" method="POST">
@@ -36,6 +36,16 @@
                                   <div class="checkbox">
                                       <label>
                                           <input type="checkbox" name="remember"> Remember Me
+                                      </label>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="form-group row">
+                              <div class="col-md-6 offset-md-4">
+                                  <div class="checkbox">
+                                      <label>
+                                          <a href="{{ route('forget.password.get') }}">Reset Password</a>
                                       </label>
                                   </div>
                               </div>
